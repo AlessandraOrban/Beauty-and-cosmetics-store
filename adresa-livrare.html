@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script_header.js" defer></script>
+    <script src="script_footer.js" defer></script>
+    <title>Adaugare adresa de livrare</title>
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 50px auto;
+    width: 80%;
+    max-width: 400px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+select {
+    width: calc(100% - 10px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #c6ac8f;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #ad8e6b;
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+    }
+}
+
+.container .loginButton {
+    margin-top: 10px;
+    background-color: #c6ac8f; /* Culoare verde */
+  color: white; /* Text alb */
+  padding: 10px 20px; /* Spațiere interioară */
+  border: none; /* Fără margini */
+  border-radius: 5px; /* Colțuri rotunjite */
+  font-size: 16px; /* Dimensiunea textului */
+  font-weight: bold; /* Text îngroșat */
+  cursor: pointer; /* Cursorul se schimbă la pointer */
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.container .loginButton:hover {
+    background-color: #9c8364; /* Culoare verde mai închisă la hover */
+    transform: scale(1.00); /* Mărește ușor butonul la hover */
+  }
+  
+  .container .loginButton:active {
+    background-color: #937a5c; /* Culoare verde și mai închisă la click */
+    transform: scale(0.95); /* Micșorează ușor butonul la click */
+  }
+  
+  .container .loginButton:focus {
+    outline: none; /* Înlătură conturul default */
+    box-shadow: 0 0 5px rgba(235, 160, 91, 0.5); /* Adaugă o umbră albastră la focus */
+  }
+
+</style>
+<body>
+    <header></header>
+    <div class="container">
+        <h2>Completează adresa de livrare</h2>
+        <form action="procesare-livrare.php" method="POST">
+            <label for="nume">Nume:</label>
+            <input type="text" id="nume" name="nume" required><br>
+
+            <label for="prenume">Prenume:</label>
+            <input type="text" id="prenume" name="prenume" required><br>
+
+            <label for="telefon">Număr telefon:</label>
+            <input type="tel" id="telefon" name="telefon" required><br>
+
+            <label for="adresa">Adresă:</label>
+            <input type="text" id="adresa" name="adresa" required><br>
+
+            <label for="judet">Județ:</label>
+            <input type="text" id="judet" name="judet" required><br>
+
+            <label for="oras">Oraș:</label>
+            <input type="text" id="oras" name="oras" required><br>
+
+            <input type="submit" value="Trimite">
+        </form>
+    </div>
+    <footer></footer>
+</body>
+</html>

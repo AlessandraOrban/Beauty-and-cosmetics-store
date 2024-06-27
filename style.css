@@ -1,0 +1,255 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.carousel-container {
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 25px;
+    margin-top: -10px;
+}
+
+.carousel {
+    display: flex;
+    scroll-snap-type: x mandatory;
+    width: 100%;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+    scroll-snap-align: start;
+    border-bottom-left-radius: 25px; /* Rotunjire colț stânga-jos */
+    border-bottom-right-radius: 25px; /* Rotunjire colț dreapta-jos */
+}
+
+.indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.indicator {
+    width: 10px;
+    height: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.indicator.active {
+    background-color: #717171;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.container h1 , h2 {
+  color: #c6ac8f;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+.product-card {
+  background: #ffffff;
+  padding: 20px;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.product-card h3 {
+  font-size: 1.2em;
+  margin: 10px 0;
+  color: #000;
+}
+
+.product-card .price {
+  font-size: 1.1em;
+  color: #000000;
+}
+
+.product-card a {
+  text-decoration: none;
+  color: #000; /* Schimbă culoarea textului în negru */
+}
+
+.product-card a:hover h3, 
+.product-card a:hover .price {
+  text-decoration: none; /* Elimină sublinierea pe hover */
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+.product-card h2 {
+  margin-top: 0;
+  font-size: 20px;
+  color: #333;
+}
+.product-card p {
+  margin: 10px 0;
+  color: #666;
+}
+.product-card .price {
+  color: #898989;
+}
+
+.add-to-cart {
+  background-color: #c6ac8f; /* Culoare verde */
+  color: white; /* Text alb */
+  padding: 10px 20px; /* Spațiere interioară */
+  border: none; /* Fără margini */
+  border-radius: 5px; /* Colțuri rotunjite */
+  font-size: 16px; /* Dimensiunea textului */
+  font-weight: bold; /* Text îngroșat */
+  cursor: pointer; /* Cursorul se schimbă la pointer */
+  transition: background-color 0.3s, transform 0.3s; /* Tranziții pentru schimbarea culorii și a dimensiunii */
+}
+
+.add-to-cart:hover {
+  background-color: #9c8364; /* Culoare verde mai închisă la hover */
+  transform: scale(1.05); /* Mărește ușor butonul la hover */
+}
+
+.add-to-cart:active {
+  background-color: #937a5c; /* Culoare verde și mai închisă la click */
+  transform: scale(0.95); /* Micșorează ușor butonul la click */
+}
+
+.add-to-cart:focus {
+  outline: none; /* Înlătură conturul default */
+  box-shadow: 0 0 5px rgba(235, 160, 91, 0.5); /* Adaugă o umbră albastră la focus */
+}
+
+.add-to-favorites {
+  background-color: #ffceef; /* Culoare pentru butonul de favorite */
+  color: white;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  margin-top: 10px;
+  margin-left: 20px; /* Spațiere între butoane */
+}
+
+.add-to-favorites:hover {
+  background-color: #e03370; /* Culoare la hover */
+  transform: scale(1.05);
+}
+
+.add-to-favorites:active {
+  background-color: #cc295e; /* Culoare la click */
+  transform: scale(0.95);
+}
+
+.add-to-favorites:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 64, 129, 0.5);
+}
+
+.add-to-favorites i {
+  margin-left: 8px; /* Spațiere între text și iconiță */
+}
+
+
+.newsletter {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .newsletter h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .newsletter p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .newsletter p:nth-child(2) {
+    color: #8b8b8b; /* pentru paragraful cu textul gri */
+  }
+  
+  .newsletter form {
+    margin-top: 20px;
+  }
+  
+  .newsletter label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .newsletter input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-left: -3%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .newsletter input[type="submit"] {
+    background-color: #c6ac8f;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .newsletter input[type="submit"]:hover {
+    background-color: #c6ac8f;
+  }
+  
+  .newsletter small {
+    color: #8b8b8b; /* pentru textul gri */
+    font-size: 12px;
+    margin-left: 5px;
+  }
+
+.rayon-description {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    color: #626262;
+}
+
+.column {
+    flex: 1;
+    padding: 10px;
+    border-right: 1px solid #ccc; /* Adăugăm linia între coloane */
+}
+
+.column:last-child {
+    border-right: none; /* Eliminăm linia de la ultima coloană */
+}

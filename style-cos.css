@@ -1,0 +1,86 @@
+h1 {
+    margin-left: 30px;
+    color: #c6ac8f;
+}
+.cart-product {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.cart-product h3 {
+    margin-top: 0;
+}
+
+.cart-product p {
+    margin-bottom: 5px;
+}
+
+#cartItems{
+    margin-left: 30px;
+    font-size: 19px;
+}
+
+#cartItems img {
+    max-width: 100px; /* Setează lățimea maximă a imaginilor pentru a menține aspectul general al paginii */
+    margin-right: 10px; /* Adaugă un spațiu mic între imagine și text */
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.cart-items {
+    width: 60%;
+}
+
+.summary {
+    margin-left: 60%;
+    width: 35%;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.summary h2 {
+    margin-top: 0;
+    color: #c6ac8f;
+}
+
+.payment-methods img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+#payButton {
+    background-color: #c6ac8f; /* Culoare verde */
+  color: white; /* Text alb */
+  padding: 10px 20px; /* Spațiere interioară */
+  border: none; /* Fără margini */
+  border-radius: 5px; /* Colțuri rotunjite */
+  font-size: 16px; /* Dimensiunea textului */
+  font-weight: bold; /* Text îngroșat */
+  cursor: pointer; /* Cursorul se schimbă la pointer */
+  transition: background-color 0.3s, transform 0.3s; /* Tranziții pentru schimbarea culorii și a dimensiunii */
+}
+
+#payButton:hover {
+    background-color: #9c8364; /* Culoare verde mai închisă la hover */
+    transform: scale(1.05); /* Mărește ușor butonul la hover */
+  }
+  
+  #payButton:active {
+    background-color: #937a5c; /* Culoare verde și mai închisă la click */
+    transform: scale(0.95); /* Micșorează ușor butonul la click */
+  }
+  
+  #payButton:focus {
+    outline: none; /* Înlătură conturul default */
+    box-shadow: 0 0 5px rgba(235, 160, 91, 0.5); /* Adaugă o umbră albastră la focus */
+  }

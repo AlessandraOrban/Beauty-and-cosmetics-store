@@ -1,0 +1,30 @@
+.link-section {
+    margin-top: 20px;
+    background-color: #f0f0f0; /* Culoarea de fundal */
+    padding: 20px; /* Spațiu interior */
+    border-radius: 8px; /* Colțuri rotunjite */
+}
+
+.link-section ul {
+    list-style-type: none;
+    padding: 0;
+    columns: 3; /* Împarte lista în trei coloane */
+    column-gap: 20px; /* Spațiu între coloane */
+}
+
+.link-section ul li {
+    margin-bottom: 10px;
+}
+
+.link-section ul li a {
+    text-decoration: none;
+    color: #626262;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif; /* Tipul de font */
+    font-weight: bold; /* Text îngroșat */
+}
+
+.link-section ul li a:hover {
+    text-decoration: underline;
+    color: #c6ac8f; /* Schimbă culoarea la hover */
+}

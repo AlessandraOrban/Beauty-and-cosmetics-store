@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 200px); /* Ajustează în funcție de înălțimea header-ului */
+    background-color: #f4f4f4;
+}
+
+.login-box {
+    background-color: #fff;
+    padding: 40px 20px; /* Ajustează padding-ul pentru a face caseta mai confortabilă */
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px; /* Ajustează lățimea casetei */
+    max-width: 90%; /* Asigură că se potrivește pe ecrane mici */
+}
+
+.login-box h2 {
+    margin-top: 0;
+    color: #c6ac8f;
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"] {
+    width: calc(100% - 20px); /* Ajustează pentru a se potrivi în interiorul casetei */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+}
+
+.login-box input[type="submit"] {
+    background-color: #c6ac8f;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+}
